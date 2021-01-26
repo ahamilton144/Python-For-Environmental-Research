@@ -30,7 +30,7 @@ Computer programming is an increasingly important tool for researchers intereste
 
 ## Course Objectives
 
-This course will serve as an introduction to computer programming in Python. Students will develop a working knowledge of the Python programming language and learn how to formulate research questions as computer code. They will learn about a variety of Python-based packages and techniques that can be used to build models, analyze data, and create visualizations for research in environmental sciences and engineering.
+This course will serve as an introduction to computer programming in Python. Students will develop a working knowledge of the Python programming language and learn how to formulate research questions as computer code. They will learn about a variety of Python-based packages and techniques that can be used to build models, analyze data, and create visualizations for research in environmental sciences and engineering. We will take an applications-based approach, with new techniques applied to examples such as air quality monitoring, reservoir management, disease spread, power markets, and environmental justice.
 
 ENVR 890-001 is a companion course to ENVR 755 (Analysis of Water Resource Systems), and as such, an emphasis in the second half of the semester will be placed on applications related to water resources engineering, economics, and management. Students are encouraged to co-enroll in ENVR 755 for context on these applications. However, all are welcome, and many of the tools and techniques learned in this class will be applicable to a variety of research areas beyond water resources management.
 

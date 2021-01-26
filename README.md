@@ -15,8 +15,6 @@ University of North Carolina at Chapel Hill
 
 **Office Hours:** Wednesdays, 3-5 PM, Eastern time (Check your email for Zoom link)
 
-**Course Website:** https://github.com/ENVR-890-001-F20/ENVR-890-001-Python-For-Environmental-Researcher-F20 (Note: *you will need to create an account on GitHub.com and email Andrew your username so that I can grant you access*.)
-
 **Prerequisites:** None (although ENVR 755 is a suggested co-requisite, see "Course Objectives")
 
 **Text:** None. We will draw from a variety of free, online resources.

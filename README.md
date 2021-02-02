@@ -1,13 +1,10 @@
-# ENVR 890-001: Python for Environmental Research (1 credit)
-Department of Environmental Sciences & Engineering
+# Python for Environmental Research
 
-Gillings School of Global Public Health
-
-University of North Carolina at Chapel Hill
+This repository contains all materials used for teaching **Python for Environmental Research** (ENVR 890-001), a 1-credit course in the Department of Environmental Sciences & Engineering, Gillings School of Global Public Health, at the University of North Carolina at Chapel Hill. This course was taught for the first time in Fall 2020. 
 
 ## Fall 2020 Information
 
-**Instructors:** Andrew Hamilton (andrew.hamilton@unc.edu), Dr. Greg Characklis (charack@email.unc.edu)
+**Instructors:** Andrew Hamilton, Dr. Greg Characklis
 
 **Class Room:** Virtual (Check your email for the Zoom link)
 

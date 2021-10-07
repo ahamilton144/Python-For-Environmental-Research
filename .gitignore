@@ -1,7 +1,8 @@
 ### file types to ignore
 __pycache__
-.ipynb_*
-*/.ipynb_*
+*.ipynb_*
+*/*.ipynb_*
 ~*
 *~
 *.swp
+*/*_key.*

@@ -1,0 +1,326 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Stephanie Bucknam, GIS Unit, Division of Information Technology, California Water Resources Control Board, IT Specialist </origin>
+        <pubdate>20171003</pubdate>
+        <title>IR1416_Impaired_Lines</title>
+        <geoform>vector digital data</geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>Under Section 303(d) of the Clean Water Act, states, territories and authorized tribes are required to develop a list of water quality limited segments. These waters on the list do not meet water quality standards, even after point sources of pollution have installed the minimum required levels of pollution control technology. The Clean Water Act requires that these jurisdictions establish priority rankings for water on the lists and develop action plans, called as Total Maximum Daily Loads (TMDL), to improve water quality.Every two years, the California State Water Resources Control Board submits a report on the State's water quality to the U.S. Environmental Protection Agency pursuant to Section 305(b) of the federal Clean Water Act. The Report provides water quality information to the general public and serves as the basis for U.S. EPA 's National Water Quality Inventory Report to Congress.This dataset includes all impaired linear water body features in California assessed under Sections 303(d) and 305(b) of the Clean Water Act for the combined 2014 and 2016 Integrated Report listing cycle. Each water body is assigned a unique Water Body ID (WBID) number as well as selected associated information (water body name, Regional Water Quality Control Board number, etc.).</abstract>
+      <purpose>This layer includes all impaired linear water bodies for the combined 2014 and 2016 Integrated Report. </purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20180406</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>The California 303(d) List was approved by USEPA on April 6th, 2018.</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.459007</westbc>
+        <eastbc>-113.499627</eastbc>
+        <northbc>42.049279</northbc>
+        <southbc>32.423546</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>California</themekey>
+        <themekey>Integrated Report</themekey>
+        <themekey>water quality assessment</themekey>
+      </theme>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>The spatial information in this dataset is not survey quality and should only be used in manners consistent with its accuracy.</useconst>
+    <datacred>Water Quality Assessment Unit, Division of Water Quality, California State Water Resources Control Board</datacred>
+    <native> Version 6.2 (Build 9200) ; Esri ArcGIS 10.5.0.6491</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>String</sdtstype>
+        <ptvctcnt>1054</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>NAD 1983 California Teale Albers</mapprojn>
+          <albers>
+            <stdparll>34.0</stdparll>
+            <stdparll>40.5</stdparll>
+            <longcm>-120.0</longcm>
+            <latprjo>0.0</latprjo>
+            <feast>0.0</feast>
+            <fnorth>-4000000.0</fnorth>
+          </albers>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.0001</absres>
+            <ordres>0.0001</ordres>
+          </coordrep>
+          <plandu>meter</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>IR1416_Impaired_Lines</enttypl>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>WBID</attrlabl>
+        <attrdef>Water Body Identification Number</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WBNAME</attrlabl>
+        <attrdef>Name of the water body used on the 303(d)/305(b) list</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>REGION_NUM</attrlabl>
+        <attrdef>Number of the Regional Water Quality Control Board containing the water body</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>North Coast RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>San Francisco Bay RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Central Coast RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Los Angeles RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>5</edomv>
+            <edomvd>Central Valley RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>6</edomv>
+            <edomvd>Lahontan RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>7</edomv>
+            <edomvd>Colorado River RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>8</edomv>
+            <edomvd>Santa Ana RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>9</edomv>
+            <edomvd>San Diego RWQCB</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>REGION_NAME</attrlabl>
+        <attrdef>Name of Regional Water Quality Control Board containing the water body.</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>LISTED</attrlabl>
+        <attrdef>Listing status of the water body on the 303(d) list.</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>EST_SIZE_ASSESSED</attrlabl>
+        <attrdef>Estimated size of the assessed or impaired area of the water body.</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>SIZE_ASSESSED_UNIT</attrlabl>
+        <attrdef>Units of the value in the EST_SIZE_ASSESSED field.</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>INT_REPORT_CATEGORY</attrlabl>
+        <attrdef>Integrated Report Category</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Category 1 - Waters Supporting All Beneficial Uses</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Category 2 - Waters Supporting Some Beneficial Uses</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Category 3 - Insufficient Information to Assess Beneficial Uses</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>4a</edomv>
+            <edomvd>Category 4(a) - Waters Being Addresses by USEPA Approved TMDLs (303(d) list category)</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>4b</edomv>
+            <edomvd>Category 4b - Waters Being Addressed by Actions Other than TMDLs (303(d)-list category)</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>4c</edomv>
+            <edomvd>Category 4c - Waters Impacted by Pollution</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+          <edom>
+            <edomv>5</edomv>
+            <edomvd>Category 5 - Waters where standards are not met and a TMDL is required, but not yet completed, for at least one of the listed pollutants for the water body (303(d)-list category)</edomvd>
+            <edomvds>US EPA</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>WBTYPE_CODE</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>WBTYPE</attrlabl>
+        <attrdef>Water body type.</attrdef>
+        <attrdefs>State Water Resources Control Board</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Bay &amp; Harbor</edomv>
+            <edomvd>Bay or Harbor</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Coastal &amp; Bay Shoreline</edomv>
+            <edomvd>Shoreline</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Estuary</edomv>
+            <edomvd>Estuary</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Lake &amp; Reservoir</edomv>
+            <edomvd>Lake or reservoir</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Ocean</edomv>
+            <edomvd>Ocean</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>River &amp; Stream</edomv>
+            <edomvd>River or stream</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Saline Lake</edomv>
+            <edomvd>Saline Lake</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wetland, Freshwater</edomv>
+            <edomvd>Freshwater wetland</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wetland, Tidal</edomv>
+            <edomvd>Tidal wetland</edomvd>
+            <edomvds>State Water Resources Control Board</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GlobalID</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>Shape_Length</attrlabl>
+        <attrdef>Length of feature in internal units.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <metainfo>
+    <metd>20180726</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>GIS Unit, Division of Information Technology, California Water Resources Control Board</cntorg>
+          <cntper>Stephanie Bucknam</cntper>
+        </cntorgp>
+        <cntpos>IT Specialist </cntpos>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>1001 I Street </address>
+          <city>Sacramento</city>
+          <state>CA</state>
+          <postal>95814</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>916-558-1708</cntvoice>
+        <cntemail>GIS@waterboards.ca.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

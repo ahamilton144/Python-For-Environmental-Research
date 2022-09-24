@@ -17,7 +17,46 @@ import random
 
 ###############################################################################
 ############################## FOR LOOPS!! ####################################
+new_time = random.choices(list(range(0,24)), weights = [(1/24)]*24, k = 100)
 
+time = []
+time2 = []
+for i in range(100): 
+#      print(time)
+    new_time = random.choices(list(range(0,24)), weights = [(1/24)]*24)[0]
+    new_time2 = random.choices(list(range(0,24)), weights = [(1/24)]*24)
+    time.append(new_time)
+    time2.append(new_time2)
+
+## subtract 12
+subtracted = []
+for t in range(0, len(time)): 
+    t2 = time[t] - 12
+    subtracted.append(t2)
+    
+subtracted2 = []
+for t in time: 
+    t2 = t - 12 
+    subtracted2.append(t2)
+
+def func(age, name = 'Rosa'):
+    print(name + ' is ' + str(age))
+    output = name + ' is ' + str(age)
+    return output
+
+ages = random.choices(list(range(0,100)), k = 100)
+names = random.choices(["Isabella", "Zach", "Andrew", "David", "Christina", "Francois"], k = 100)
+   
+#all_ages = []
+all_ages2 = []
+for i in range(100): 
+#    all_ages.append(func(ages[i]))
+    #name = names[i]
+    #age = ages[i]
+    
+    var = func(ages[i], names[i])
+    all_ages2.append(var)
+    
 
 ###############################################################################
 ################################ NUMPY!! ######################################
@@ -29,9 +68,14 @@ a = np.array(l)
 print(a, type(a)) 
 
 ## NOTE: everything needs to be the same type
-l2 = [[1, 2, '3'], [10, 9, 8]]
+l2 = [[1, 2., '3'], [10, 9, 8]]
 a2 = np.array(l2)
 ## what would you expect here?
+print(a2)
+
+# l2 = [[1., 2, 3], [10, 9, 8]]
+# a2 = np.array(l2)
+# print(a2)
 
 ## We can index just like a list! 
 print(a2[1][0])
@@ -41,16 +85,16 @@ print(a2[1][1])
 print(a2[1,0]) 
 
 ## or slices!
-print(a2[:,2:])
+print(a2[0,1:])
 
 ## can find the dimensions 
 print(a2.ndim)
 print(a2.shape)
 
 ## it's easy to fill arrays with a single value 
-threes = np.ones(3)
+threes = np.ones(30)
 zeros = np.zeros((3, 10, 20))
-print(zeros, zeros.shape)
+print(zeros.shape)
 
 ## and it's got awesome sequence functions
 print(np.arange(10))
@@ -69,9 +113,6 @@ print(b)
 c = a*2
 print(c)
 
-################# IN CLASS EXERCISE! ###################
-## make me a for loop that will iterate over every row 
-## and every column, and print out the value of the array
 
 ################## LOGICAL INDEXING #####################
 ### create array of square roots, some of which are undefined
@@ -99,7 +140,7 @@ h = a[g]
 print(h)
 
 ### often easier to put logical condition right inside brackets instead of defining as separate variable
-g = e[e > 4]
+g = a[a > 4]
 print(g)
 
 ## we can also use multiple conditions
@@ -110,6 +151,23 @@ lt2_or_gte4 = lt2 | gte4 ## NOTE! We are using "|" NOT "or"
 g = a[lt2_or_gte4]
 print(g)
 print(g.shape)
+
+g = a[(a < 2) | (a >= 4)]
+
+################# IN CLASS EXERCISE! ###################
+## make me a for loop that will iterate over every row 
+## and every column, and print out the value of the array
+l = [[1, 2, 3, 4, 5], [10, 9, 8, 7, 6]]
+print(l, type(l))
+a = np.array(l)
+print(a, type(a)) 
+
+for r in range(a.shape[0]):
+    for c in range(a.shape[1]): 
+        print(a[r,c])
+
+
+## STOPPED HERE 
 
 ###############################################################################
 ############################### PANDAS!! ######################################

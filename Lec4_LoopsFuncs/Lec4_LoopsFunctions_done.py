@@ -5,7 +5,6 @@ Created on Thu Sep  8 22:58:38 2022
 @author: rcuppari
 """
 
-
 #############################################################################
 ############# LECTURE 4: LOOPS, FUNCTIONS, and COMPREHENSIONS ###############
 #############################################################################
@@ -51,24 +50,32 @@ count = 0
 while count < 10: 
     print(count)
     count += 1 
+## make sure you don't have bugs! For example, forgetting the "=" as below
+## would make your code run infinitely 
 #    count+1
 
 ########################### IN CLASS EXERCISE #################################
 ## create three lists 50 items long using a while loop: "time", "day", & "accident"
 ## I've already given you an example for the first two lists
 ## now do the same for accident 
+## ADDED!
+import random
 time = []
 day = []
 accident = []
-while ## FILL IN 
+count = 0 
+while count < 50: ## FILL IN 
 # HINT!    count += 1 
+    count +=1
     new_time = random.choices(list(range(0,24)), weights = [(1/24)]*24)[0]
     time.append(new_time)
     
     new_day = random.choices(["weekend", "weekday"], weights = [2/7, 5/7])[0]
-    day.append(day)
+    day.append(new_day)
     
     ## add in accident list 
+    new_acc = random.choices(["yes", "no"], weights = [2/7, 5/7])[0]
+    accident.append(new_acc)
     
 ## now, create a for loop that will iterate over your two lists
 ## and then print what sort of traffic to expect at each point
@@ -76,17 +83,26 @@ from PIL import Image
 image = Image.open('tree_traffic.jpg')
 image.show()
 
-for i in : ## FILL IN!
-    if day == ## FILL: 
+for i in range(len(day)): ## FILL IN!
+    if day[i] == 'weekday': ## FILL: 
     
         ## move to time of day 
-        
+        if (time[i] < 9) or (time[i] > 17): 
             ## move to accident or no accident
+            if accident[i] == 'yes': 
+               print(f'The traffic at {time[i]} on a {day[i]} will be horrendous')
+            else: 
+               print(f'The traffic at {time[i]} on a {day[i]} will be rush hour traffic')
+        else: 
+            print(f'The traffic at {time[i]} on a {day[i]} will be middling')
+            
     else: 
-
         ## move to time of day 
-        
-            ## move to accident or no accident
+        if (time[i] < 17): 
+            print(f'The traffic at {time[i]} on a {day[i]} will be low')
+        else: 
+            print(f'The traffic at {time[i]} on a {day[i]} will be middling')        
+
 
 ###############################################################################
 ######################### LIST COMPREHENSIONS!! ###############################
@@ -94,7 +110,6 @@ for i in : ## FILL IN!
 
 ## maybe we want to see how many households in NC have private wells 
 ## let's make up some random data 
-import random
 ## numeric index for each household in county
 household = ['H' + str(i) for i in list(range(1000))]
 print(household)
@@ -131,7 +146,9 @@ print(len(eligible))
 ########################### IN CLASS EXERCISE #################################
 ## create a list comprehension for eligibility based on whether a household
 ## has private water AND household # is < 250  
-
+## ADDED! 
+eligible = [household[i] for i in range(0, 250) if (water[i] == 'private')]
+print(len(eligible))
 
 ###############################################################################
 ############################ FUNCTIONS!! ######################################
@@ -223,17 +240,37 @@ print(x, z)
 
 ## make a simple function that takes an input of temperature in celsius
 ## and returns fahrenheit (conversion:( C * 9/5) + 32)
+## ADDED! 
+def temp_conv(celsius): 
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit 
 
 ## create a print statement to show that it works when you input zero degrees
-func_output = ## FILL IN 
-print('Zero degrees Celsius is equal to ' + func_output + \
+func_output = temp_conv(0) ## FILL IN 
+print('Zero degrees Celsius is equal to ' + str(func_output) + \
       ' degrees Fahrenheit')
 
 ## now do this  for 0 - 40 degrees  
 converted = []
-for t in # FILL IN
-    deg_fah = # FILL IN 
-    converted # FILL IN
+for t in range(40): # FILL IN
+    deg_fah = temp_conv(t) # FILL IN 
+    converted.append(deg_fah) # FILL IN
 print(converted)
 
 ## do this with a list comprehension
+deg_conversion = [temp_conv(i) for i in range(40)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
